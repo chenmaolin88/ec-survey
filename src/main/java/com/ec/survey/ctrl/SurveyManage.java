@@ -126,7 +126,7 @@ public class SurveyManage extends HttpServlet {
 			} catch (ParseException e) {
 				 out.println("wrong DATE format.please check it!");
 			}
-			survey.setTemplet(0L);//Ԥ��ģ�幦��
+			//survey.setTemplet(0L);//Ԥ��ģ�幦��
 			survey.setSIpRepeat(Boolean.valueOf(request.getParameter("Survey_ipRepeat")));
 			survey.setSIsOpen(Boolean.valueOf(request.getParameter("Survey_isOpen")));
 			if(request.getParameter("Survey_isImg")!=null){

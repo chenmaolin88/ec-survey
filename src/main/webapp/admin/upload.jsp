@@ -31,7 +31,8 @@ while (iter.hasNext()) {
    if (!item.isFormField()) {
      String contentType = item.getContentType();
      long sizeInBytes = item.getSize();
- 	 if((contentType.equals("image/gif")||contentType.equals("image/pjpeg"))&&sizeInBytes<=1024*1024){
+     System.out.println(contentType+sizeInBytes);
+ 	 if((contentType.equals("image/gif")||contentType.equals("image/pjpeg")||contentType.equals("image/jpeg"))&&sizeInBytes<=1024*1024){
     // Process a file upload
 	 	String appendix;
 	 	if("image/gif".equals(contentType))

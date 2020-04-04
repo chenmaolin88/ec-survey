@@ -34,8 +34,9 @@ DecimalFormat df=new DecimalFormat("0.00");
 int i=1;
 for(Question q:qlist){
 	
-	
-	String [] bodys=q.getQBody().split("&\\$\\$&");
+	String [] bodys={};
+	if (q.getQBody()!=null)
+	    bodys=q.getQBody().split("&\\$\\$&");
 	String [] results=q.getQResult().split(",");
 	if(q.getQType()==5){
 	
