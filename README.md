@@ -20,8 +20,19 @@
 
 # 如何构建并运行项目
 ## 安装Mysql8.0(国内推荐用迅雷下载)
-下载[Mysql8](https://dev.mysql.com/downloads/mysql/)后采用默认推荐配置安装即可，假设root密码为123456
+* 下载[Mysql8](https://dev.mysql.com/downloads/mysql/)后采用默认推荐配置安装即可，假设root密码为123456
+* 运行Mysql WorkBench，创建一个schema（数据库），字符集选择utf8mb4
+
 ## 安装JDK11(国内推荐用迅雷下载)
 下载[JDK11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html#license-lightbox)，采用默认安装。
+
+配置环境变量JAVA_HOME 指向JDK11的安装目录
+
+## 安装Tomcat9
+下载安装好，运行bin\startup.bat,启动tomcat，若Tomcat乱码问题，修改apache-tomcat-9.0.33/conf/logging.properties把UTF-8改成GBK
+
 ## 克隆本代码库到本地
 可以克隆，也可以直接[下载包](https://github.com/chenmaolin88/ec-survey/archive/master.zip)
+
+
+
