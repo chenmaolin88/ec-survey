@@ -2,7 +2,10 @@
 这个JAVA网络问卷调查系统是我大学毕业（2009年）时做的毕业设计，在2010年的时候发布到了网络上给大家做交流参考，没想到这么多年过去了，仍然有学生
 联系我咨询这个项目的代码问题，因此我决定将这个项目进行部分升级更新后放到github（可能会同步创建一个码云gitee的备份）上来，希望大家一起共同
 来维护这个项目。
-！[1](img/1.png)！[2](img/2.png)！[3](img/3.png)！[4](img/4.png)
+<img src="img/1.png" width = "300" height = "200"   />
+<img src="img/2.png" width = "300" height = "200"   />
+<img src="img/3.png" width = "300" height = "200"   />
+<img src="img/4.png" width = "300" height = "200"   />
 # 重要提醒
 由于是毕业设计，主要目的是研究学习，因此有如下特点和局限：
 
@@ -24,7 +27,7 @@
 ## 安装Mysql8.0(国内推荐用迅雷下载)
 * 下载[Mysql8](https://dev.mysql.com/downloads/mysql/)后采用默认推荐配置安装即可，假设root密码为123456
 * 运行Mysql WorkBench，创建一个schema（数据库），字符集选择utf8mb4
-![schema](https://github.com/chenmaolin88/ec-survey/blob/master/img/schema.png)
+![schema](img/schema.png)
 ## 安装JDK11(国内推荐用迅雷下载)
 下载[JDK11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html#license-lightbox)，采用默认安装。
 
