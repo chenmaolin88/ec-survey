@@ -22,7 +22,7 @@
 ## 安装Mysql8.0(国内推荐用迅雷下载)
 * 下载[Mysql8](https://dev.mysql.com/downloads/mysql/)后采用默认推荐配置安装即可，假设root密码为123456
 * 运行Mysql WorkBench，创建一个schema（数据库），字符集选择utf8mb4
-
+![schema](https://github.com/chenmaolin88/ec-survey/blob/master/img/schema.png)
 ## 安装JDK11(国内推荐用迅雷下载)
 下载[JDK11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html#license-lightbox)，采用默认安装。
 
