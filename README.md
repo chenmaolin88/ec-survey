@@ -62,3 +62,7 @@
   http://localhost:8080/survey/admin 后台登陆，默认用户:admin/111111
 * 如果页面打开报告异常，则很有可能是数据库连接不成功，请检查数据库链接。
   
+  
+# 关于论文
+* 论文我会逐步发布到我的头条号上，请用今日头条APP关注：
+<img src="img/toutiao.jpg" width="200" height="200" />
