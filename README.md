@@ -57,3 +57,8 @@
  * 在右侧的maven面板中，双击survey->Lifecycle->package即可开始编译打包war文件，将该war包部署到TOMCAT中即可。
  
 
+# 启动应用
+* 启动数据库和重启动TOMCAT，访问http://localhost:8080/survey 测试。
+  http://localhost:8080/survey/admin 后台登陆，默认用户:admin/111111
+* 如果页面打开报告异常，则很有可能是数据库连接不成功，请检查数据库链接。
+  
