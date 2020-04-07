@@ -26,16 +26,34 @@
 * 下载[Mysql8](https://dev.mysql.com/downloads/mysql/)后采用默认推荐配置安装即可，假设root密码为123456
 * 运行Mysql WorkBench，创建一个schema（数据库），字符集选择utf8mb4
 ![schema](img/schema.png)
+* 在Mysql Workbench里，在survey数据库下，执行项目根目录下的[survey.sql](survey.sql)脚本，创建表和初始化数据
 ## 安装JDK11(国内推荐用迅雷下载)
 下载[JDK11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html#license-lightbox)，采用默认安装。
 
 配置环境变量JAVA_HOME 指向JDK11的安装目录
 
 ## 安装Tomcat9
-下载安装好，运行bin\startup.bat,启动tomcat，若Tomcat乱码问题，修改apache-tomcat-9.0.33/conf/logging.properties把UTF-8改成GBK
-
+* 下载安装好，运行bin\startup.bat,启动tomcat，若Tomcat乱码问题，修改apache-tomcat-9.0.33/conf/logging.properties把UTF-8改成GBK
+* 需要配置数据源，在conf/context.xml里的Context标签下，插入如下内容：
+   `<Resource name="jdbc/survey" auth="Container" type="javax.sql.DataSource"
+            maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="root"
+            password="123456" driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/survey?serverTimezone=GMT%2B8&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" />`
 ## 克隆本代码库到本地
 可以克隆，也可以直接[下载包](https://github.com/chenmaolin88/ec-survey/archive/master.zip)
 
-
+## 在IDEA中导入本项目
+* 安装好免费的IDEA 2019.3.4社区版（当然，有钱的同学可以买收费的旗舰版），
+* 配置maven仓库的国内镜像，具体操作如下：
+    * 在IDEA中，File->Open 本项目，右键单击pom.xml，选择maven->create settings.xml,然后在里面粘贴如下内容：
+    `    <mirrors>
+             <mirror>
+                 <id>alimaven</id>
+                 <mirrorOf>central</mirrorOf>
+                 <name>aliyun maven</name>
+                 <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+             </mirror>
+         </mirrors>`
+ * 在右侧的maven面板中，双击survey->Lifecycle->package即可开始编译打包war文件，将该war包部署到TOMCAT中即可。
+ 
 
