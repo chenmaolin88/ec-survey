@@ -66,3 +66,5 @@
 # 关于论文
 * 论文我会逐步发布到我的头条号上，请用今日头条APP搜索“IT人上善”，或者扫码关注：
 <img src="img/toutiao.jpg" width="200" height="200" />
+
+* 论文已上传，[在这里](lunwen.doc)
